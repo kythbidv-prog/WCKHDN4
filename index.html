@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Cup 2026 Odds Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="brand-mark">WC</div><div><strong>World Cup Odds Pro</strong><span>Dự đoán nội bộ - không cá cược tiền thật</span></div></div>
+  <nav><a href="#matches">Lịch thi đấu</a><a href="#betslip">Phiếu dự đoán</a><a href="#ranking">Xếp hạng</a></nav>
+  <button class="login-btn">Đăng nhập</button>
+</header>
+
+<section class="hero">
+  <div>
+    <p class="live-pill">● LIVE ODDS CENTER</p>
+    <h1>World Cup 2026 Predictor</h1>
+    <p class="subtitle">Giao diện mô phỏng phong cách odds thể thao: lịch đấu, kèo 1X2, châu Á, tài/xỉu và phiếu dự đoán.</p>
+  </div>
+  <div class="hero-card"><span>Jackpot điểm thưởng</span><strong>12,500 pts</strong><small>Cập nhật theo bảng xếp hạng dự đoán</small></div>
+</section>
+
+<main class="layout">
+  <aside class="sidebar">
+    <h3>Giải đấu</h3>
+    <button class="active">🏆 World Cup 2026</button><button>⚽ Vòng bảng</button><button>🔥 Knock-out</button><button>⭐ Trận hot</button>
+    <h3>Thị trường</h3>
+    <button>1X2</button><button>Châu Á</button><button>Tài/Xỉu</button><button>Tỷ số chính xác</button>
+  </aside>
+
+  <section class="content">
+    <div class="section-head" id="matches">
+      <h2>Lịch thi đấu & tỷ lệ</h2>
+      <div class="filter"><button class="active">Tất cả</button><button>Hôm nay</button><button>Ngày mai</button></div>
+    </div>
+    <div class="odds-table" id="matchList"></div>
+
+    <div class="ranking" id="ranking">
+      <h2>Bảng xếp hạng demo</h2>
+      <table>
+        <thead><tr><th>Hạng</th><th>Người chơi</th><th>Đúng tỷ số</th><th>Điểm</th></tr></thead>
+        <tbody><tr><td>1</td><td>Anh Minh</td><td>6</td><td>38</td></tr><tr><td>2</td><td>Chị Lan</td><td>5</td><td>34</td></tr><tr><td>3</td><td>Phòng KHDN4</td><td>4</td><td>31</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <aside class="betslip" id="betslip">
+    <h2>Phiếu dự đoán</h2>
+    <div id="slipItems" class="slip-items"><p class="empty">Chọn tỷ lệ ở bảng bên trái để thêm vào phiếu.</p></div>
+    <label>Điểm dự đoán</label>
+    <input id="stake" type="number" min="0" value="100">
+    <div class="summary"><span>Tổng lựa chọn</span><strong id="totalPicks">0</strong></div>
+    <div class="summary"><span>Odds mô phỏng</span><strong id="totalOdds">1.00</strong></div>
+    <button class="submit" onclick="saveSlip()">Lưu phiếu</button>
+    <button class="clear" onclick="clearSlip()">Xóa phiếu</button>
+    <p class="legal">Website chỉ phục vụ dự đoán vui/nội bộ, không xử lý giao dịch cá cược tiền thật.</p>
+  </aside>
+</main>
+
+<footer>© 2026 World Cup Odds Pro Demo. Built for GitHub Pages.</footer>
+<script src="script.js"></script>
+</body>
+</html>
